@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>craft ai</title>
+		<link rel="icon" href="http://www.craft.ai/images/favicons/android-chrome-192x192.png">
+
+		<meta name="description" content="Presentation for Telecom">
+		<meta name="author" content="Yrieix Leprince">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/craft.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130602790-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130602790-2');
+		</script>
+
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+<!--  
+	Pour la soutenance, vous avez :
+		30mn pour la présentation, 
+		10mn de questions 
+		5mn d’entretien entre le tuteur en entreprise (lequel rend son avis via un lien internet transmis par la FC de Télécom) et le référent académique. 
+
+	Vous présentez le contexte de votre mission :
+		activité de l’entreprise, 
+		type de département dans lequel vous êtes déployé, 
+		les infrastructures dont vous disposez pour l’acquisition de données, le stockage, l'analyse), 
+		ses objectifs, 
+		les moyens et compétences techniques que vous avez mobilisés, 
+		les résultats obtenus (sur le plan technique comme sur celui de la création de valeur)
+		vous pouvez finir en esquissant quelques perspectives ou pistes d'amélioration 
+-->
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+					<section>
+						<h3>MsC Thesis Defense</h3>
+						<p>Yrieix Leprince</p>
+						<p><small>Antoine Amarilli <a href="https://www.telecom-paristech.fr/">Télécom ParisTech</a> | Clodéric Mars <a href="https://www.craft.ai/"><span id='craftaitypo'>craft ai</span></a></small></p>
+					</section>
+
+					<section data-background="figures/team.png">
+						<img src="figures/craft_ai_square_logo.png" width="200">
+					</section>
+					
+					<section data-background="figures/success.jpg">
+						<h3>customer success</h3>
+					</section>
+					
+					<section data-background="figures/client.jpg">
+						<h3>use case</h3>
+						 <!-- | PME dans le coaching medical -->
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Personalized coaching</h3>
+						<p>
+							<small>Modelling adaptive, evolutionnary and contextual user behaviors</small>
+						</p>
+					</section>
+
+		<!-- 			<section>
+						<h3>What is coaching?</h3>
+					</section> -->
+
+					<section>
+						<h2>Health coach</h2>
+						<img data-src="https://lh6.googleusercontent.com/QtLbXTYCy-KPNi2Fz4-dKUrZgA_vuvvfdMGrMrQjMjOdgzQUFfn97EhomefLkdGd17FEmDRduepBnhszSErSDy0pwPqug74FkpjZsZFWCbN13XhYl_wiEBPH1lfCeo4PguKZyRcZUcI" alt="training carrot">
+					</section>
+				</section>
+
+				<section>
+					<!-- pdv user | dream app-->
+					<section data-background="figures/skinny.jpg">
+						<h3>Meet John</h3>
+					</section>
+
+					<section data-background="figures/iphone.jpeg"></section>
+
+					<section>
+						<p>John's profile</p>
+						<ul>
+							<span class="fragment highlight-green"><li>calories</li></span>
+							<span class="fragment highlight-green"><li>heartbeat</li></span>
+							<span class="fragment highlight-green"><li>sleep</li></span>
+							<span class="fragment highlight-red"><li>smoking</li></span>
+						</ul>
+					</section>
+
+					<section>
+						<h3 id="timer"></h3>
+						<p>
+							<button class="craft_button" onclick="setSRC('boxe')">Mon Morning</button> 
+							<button class="craft_button" onclick="setSRC('weight')">Wed Morning</button>
+							<button class="craft_button" onclick="setSRC('food')">Fri Evening</button>
+							<button class="craft_button" onclick="setSRC('shoes')">Sun Morning</button>
+						</p>
+						<p>
+							<img src="figures/john.jpg" id="activity_image" width="300px">
+						</p>
+					</section>
+
+					<section>
+						<!-- <p>Presentation of the feed</p> -->
+						<img src="figures/coach_feed_light.jpg">
+					</section>
+
+					<section data-background="figures/notif.jpeg">
+						<!-- <p>Presentation of the notifications</p> -->
+					</section>
+
+					<section>
+						<h3>Coaching based on three points:</h3>
+						<ul>
+							<li>Contextual</li>
+							<!-- <li class="fragment">Evolutionary</li> -->
+							<li class="fragment">Adaptive</li>
+						</ul>	
+					</section>
+
+					<section data-background="figures/muscle.jpg">
+						<h3>John right now</h3>
+					</section>
+				</section>
+
+				<section>
+					<!-- pdv app | Le besoin du client -->
+					<section> 
+						<h3>What just happened?</h3>
+					</section>
+
+					<section data-background="figures/register.jpg">
+						<pre><code class="hljs" data-trim contenteditable>
+	"age": 32,
+	"gender": "male",
+	"country": "FR",
+	... 
+						</code></pre>
+					</section>
+
+					<section>
+						<p>John tracking data</p>
+						<pre><code class="hljs" data-trim contenteditable>
+	"timestamp", "event_name", ...
+	1549300369553, app_launch, ...
+	1549300393292, calories_fill, ...
+	1549300434397, heartrate_update, ...
+						</code></pre>
+					</section>
+
+					<section>
+						<img src="figures/architecture_without_craft.png" width="500">
+					</section>
+				</section>
+
+				<section>
+					<!-- pdv craft | comment est ce que le ML permet d'y repondre -->
+					<section>
+						<h3>How did it happened?</h3>
+					</section>
+ 
+ 					<section>
+ 						<h3><a href="https://beta.craft.ai/shared/HkiErmcVN">John's craft ai model</a></h3>
+ 						<ol>
+ 							<li>One to one level</li>
+ 							<li class="fragment">Continuous Learning</li>
+ 							<li class="fragment">White Box</li>
+ 						</ol>
+ 					</section>
+
+					<section>
+						<!-- <p>Using them in the app - feed</p> -->
+						<h3>How it works</h3>
+						<img src="figures/architecture_with_craft.png">
+					</section>
+
+					<section>
+						<!-- <p>Using them in the app - feed</p> -->
+						<h3>What have I done?</h3>
+						<img src="figures/api_techno.png">
+					</section>
+
+					<section data-background="figures/hands.jpg">
+						<p class="fragment">Kmeans - DBScan</p>
+					</section>
+
+
+				</section>
+
+				<section>
+					<!-- pdv student -->
+					<section>
+						<h3>How have I been involved?</h3>
+					</section>
+
+					<section>
+						<h3>craft ai presentation</h3>
+						<ul>
+							<li>product team</li>
+							<li>customer success team</li>
+						</ul>
+					</section>
+
+					<section data-background="figures/lego.jpg">
+						<!-- presales / sales / app bientot en prod -->
+						<!-- <p>customer success</p> -->
+						<img src="figures/presales.png" width=600>
+					</section>
+
+					<section>
+						<h3>Project Managment</h3>
+						<ul>
+							<li>Slack</li>
+							<li>Weekly meeting</li>
+							<li class="fragment">1k users release by 2019/03</li>
+							<li class="fragment">50k users release by 2019/09</li>
+						</ul>
+					</section>
+					<!--
+					<section> 
+						Next steps (50k users en sept)
+						Plus details sur la collab hedbomadaire, le slack ...
+						<p>client project organisation</p>
+					</section> -->
+
+				</section>
+
+
+				<section>
+					<h4>MsC Thesis - Telecom ParisTech</h4>
+					<p>made with <i class="heart"></i> by </p>
+					<img src="figures/craft_ai_square_logo.gif" width="200">
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+		<script type="text/javascript">
+			const colors = ['#1A535C', '#4ECDC4', '#F7FFF7', '#FF6B6B', '#FFE66D'];
+			function updateTimer() {
+				const now = new Date(Date.now());
+			  	const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+			  	const day = weekdays[now.getDay()];
+			  	let hour = now.getHours();
+			  	let min = now.getMinutes();
+			  	let sec = now.getSeconds();
+			  	let milli = now.getMilliseconds();
+
+
+				timer.innerHTML=`${day}  ${hour < 10 ? '0' + hour : hour }:${min < 10 ? '0' + min : min }:${sec < 10 ? '0' + sec : sec}`;
+			}
+			updateTimer();
+			window.setInterval(function(){
+			  /// call your function here
+			  updateTimer();
+				// const color = colors[];
+			}, 1000);
+			timer.style.color = "rgba(213, 66, 103)";
+		</script>
+
+		<script type="text/javascript">
+			function setSRC(item) {
+				activity_image.src = `figures/activities/${item}.jpg`;
+			}
+		</script>
+
+	</body>
+</html>
